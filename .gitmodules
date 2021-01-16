@@ -1,0 +1,3 @@
+[submodule "basic_api"]
+	path = basic_api
+	url = git@github.com:vurokrazia/basic_api.git
