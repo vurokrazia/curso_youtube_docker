@@ -1,3 +1,6 @@
 [submodule "basic_api"]
 	path = basic_api
 	url = git@github.com:vurokrazia/basic_api.git
+[submodule "LaBanquetaDeLosGeeks"]
+	path = LaBanquetaDeLosGeeks
+	url = git@github.com:vurokrazia/LaBanquetaDeLosGeeks.git
