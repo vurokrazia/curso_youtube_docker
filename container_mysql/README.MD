@@ -32,7 +32,7 @@
   ```
 * if exist the container mysq-curse, destroyed
   ``` docker
-  docker run -d -p 3306:3306 --name mysql-curse --env-file .env --mount src=mysql-curse-data,dst=/var/lib/mysql mysql
+  docker run -d -p 3306:3306 --name mysql-curse --env-file .env --mount src=mysql-curse-data,dst=/var/lib/mysql mysql:5.7 
   ``` 
 
 ### SQL
