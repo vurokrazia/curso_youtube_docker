@@ -1,0 +1,13 @@
+CREATE DATABASE basic_crud;
+
+use basic_crud;
+
+CREATE TABLE articulos (
+  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(30) NOT NULL,
+  categoria VARCHAR(30) NOT NULL,
+  autor VARCHAR(50) NOT NULL,
+  likes INT(3),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
