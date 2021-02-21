@@ -9,10 +9,8 @@ services:
       - 3300:3306
     volumes:
       - mysql_php_data:/var/lib/mysql
-    environment:
-      MYSQL_USER: root
-      MYSQL_ROOT_PASSWORD: 123456
-      MYSQL_PASSWORD: 123456
+    env_file: 
+      - .env.mysql      
   php_my_admin:
     restart: on-failure:3
     image: phpmyadmin/phpmyadmin
@@ -29,11 +27,8 @@ services:
       - ./app/:/var/www/html/
     ports:
       - 70:80
-    environment:
-      HOST: database
-      USER: root
-      PASSWORD: 123456
-      DATABASE: basic_crud
+    env_file: 
+      - .env      
     depends_on:
       - database
   
